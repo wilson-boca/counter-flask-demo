@@ -8,7 +8,7 @@ cache = {'counter': 0}
 @app.route('/', methods=['GET'])
 def index():
     cache['counter'] += 1
-    return "It's ALIVE!, counter: {}...".format(cache['counter'])
+    return "It's REALLY ALIVE GUYS!, counter: {}...".format(cache['counter'])
 
 
 if __name__ == '__main__':
