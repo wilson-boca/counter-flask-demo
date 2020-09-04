@@ -38,3 +38,8 @@ stages:
         tags: |
           $(tag)
           latest
+    - task: AzureWebAppContainer@1
+      inputs:
+        azureSubscription: 'Pay-As-You-Go(79b7379a-fd88-4ac3-a14d-d595d4beebf7)'
+        appName: 'lero-docker'
+        containers: '$(containerRegistry)/$(imageRepository):latest'
